@@ -108,7 +108,10 @@ These visualizations support the analysis of:
 Screenshots of the dashboards are available in the `dashboards/` folder.
 
 
-![Dashboard](dashboards.png)
+![Dashboard](dashboards/VISION_NEGOCIO_BI.png)
+![Dashboard](dashboards/01_PERFIL_CLIENTE_BI.png)
+![Dashboard](dashboards/02_PERFIL_CLIENTE_BI.png)
+
 
 ---
 
