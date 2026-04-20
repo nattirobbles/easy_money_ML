@@ -2,12 +2,6 @@
 Customer analytics project using machine learning to predict customer behavior and segment users to support marketing decision-making.
 
 
-## 📌 Overview
-
-This project applies machine learning techniques to a fintech use case (Easy Money) with the goal of improving marketing efficiency and increasing customer value.
-
-The strategy focuses on **market penetration**, maximizing the value of existing customers through cross-selling financial products.
-
 ## 📌 Project Overview
 
 This project analyzes customer and transactional data from EasyMoney, a digital financial services platform, with the goal of improving marketing efficiency and increasing customer value through a **market penetration strategy**.
