@@ -96,12 +96,17 @@ A campaign simulation was developed to estimate the financial impact of targeted
 
 ## 📊 Visualizations
 
-Dashboards built in Power BI to communicate insights:
+Interactive dashboards were developed using Power BI to explore customer behavior and business performance.
+
+These visualizations support the analysis of:
 
 * Customer segmentation
-* Product performance
+* Product performance and profitability
 * Propensity distribution
 * Campaign impact
+
+Screenshots of the dashboards are available in the `dashboards/` folder.
+
 
 ![Dashboard](dashboards/top_decile_profile.png)
 
