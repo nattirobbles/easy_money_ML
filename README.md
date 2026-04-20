@@ -1,19 +1,24 @@
-# easy_money_ML
+# 💳 Easy Money - Customer Analytics & Machine Learning
 Customer analytics project using machine learning to predict customer behavior and segment users to support marketing decision-making.
 
-# 💳 Easy Money - Customer Analytics & Machine Learning
-
-EasyMoney is a digital financial services platform designed to simplify money management through a wide range of banking products across the customer lifecycle.
-
-This project focuses on applying machine learning techniques to **predict customer behavior, segment users, and optimize marketing strategies** in order to increase product adoption and customer value.
-
----
 
 ## 📌 Overview
 
 This project applies machine learning techniques to a fintech use case (Easy Money) with the goal of improving marketing efficiency and increasing customer value.
 
 The strategy focuses on **market penetration**, maximizing the value of existing customers through cross-selling financial products.
+
+## 📌 Project Overview
+
+This project analyzes customer and transactional data from EasyMoney, a digital financial services platform, with the goal of improving marketing efficiency and increasing customer value through a **market penetration strategy**.
+
+The analysis covers a 17-month period and focuses on understanding customer behavior, product adoption, and business performance over time. Key aspects include the evolution of net margin, customer engagement, and the differences between new and existing customers.
+
+Particular attention is given to identifying opportunities to increase product penetration among existing customers, as well as detecting imbalances between high-volume and high-margin products and retention issues in specific categories such as investment products.
+
+Building on these insights, a machine learning approach was applied, including a **propensity model** to predict customer purchases and a **clustering model** to segment users based on financial behavior and product usage.
+
+Finally, the results were translated into business impact through a campaign simulation, estimating ROI and enabling more efficient, targeted marketing strategies.
 
 ---
 
