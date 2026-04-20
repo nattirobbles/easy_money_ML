@@ -108,7 +108,7 @@ These visualizations support the analysis of:
 Screenshots of the dashboards are available in the `dashboards/` folder.
 
 
-![Dashboard](dashboards/top_decile_profile.png)
+![Dashboard](dashboards.png)
 
 ---
 
