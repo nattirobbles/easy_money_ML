@@ -30,7 +30,46 @@ Finally, the results were translated into business impact through a campaign sim
 
 ---
 
-## 📊 Exploratory Analysis
+## 📊 Dataset
+
+The project combines multiple data sources containing customer behavior, financial activity, and product usage.
+
+### Datasets:
+
+* `procesado_bi_customer_products.csv` → Product ownership and temporal evolution
+* `procesado_bi_customer_sociodemographics.csv` → Customer demographic profile
+* `procesado_df_commercial_clean.csv` → Customer activity and tenure
+* `sales.csv` → Transactions and net margin
+* `product_description.csv` → Product catalog
+
+### 🔗 Key Relationships
+
+* `pk_cid` → unique customer identifier used to merge datasets
+* `date` → temporal dimension (monthly snapshots)
+
+---
+
+## 🛠️ Methodology & Tools
+
+### 🧹 Data Cleaning & Feature Engineering
+
+Data was cleaned and transformed using Python, including:
+
+* Handling missing values (KNN imputation)
+* Treating outliers (winsorization)
+* Creating temporal features (lags, deltas, customer history)
+* Merging multiple data sources into a unified dataset
+
+**Tools used:**
+
+* Python
+* Pandas
+* NumPy
+* Jupyter Notebook
+
+---
+
+### 🔍 Exploratory Analysis & Business Insights
 
 Power BI dashboards were developed to analyze customer behavior and business performance over time.
 
@@ -53,11 +92,18 @@ Power BI dashboards were developed to analyze customer behavior and business per
 
 ---
 
-## 🧪 Solution
+### 🤖 Modeling Approach
 
-### 🔹 Propensity Model
+#### 🔹 Propensity Model
 
-A classification model was built to predict the probability of a customer purchasing a financial product in the next month.
+A machine learning pipeline was developed to predict the probability of a customer purchasing a financial product in the next month.
+
+* Feature engineering (lags, behavioral features)
+* Time-based train / validation / test split
+* Preprocessing (encoding, imputation)
+* Model training using **XGBoost**
+* Hyperparameter tuning with **Optuna**
+* Experiment tracking with **MLflow**
 
 To simplify the problem, the 15 products were grouped into:
 
@@ -73,14 +119,17 @@ To simplify the problem, the 15 products were grouped into:
 
 ---
 
-### 🔹 Customer Segmentation
+#### 🔹 Customer Segmentation
 
 Customers were segmented into **7 clusters using K-Means** based on financial profile and product usage.
 
 **Data preparation:**
 
-* Salary outliers were treated using **winsorization (1st–99th percentiles)**
-* This prevented artificial clusters driven by extreme values
+* Missing values imputed using **KNNImputer**
+* Features scaled using **StandardScaler**
+* Salary outliers treated using **winsorization (1st–99th percentiles)**
+
+This approach enabled the identification of meaningful customer segments based on value, engagement, and product penetration.
 
 ---
 
@@ -105,13 +154,26 @@ These visualizations support the analysis of:
 * Propensity distribution
 * Campaign impact
 
-Screenshots of the dashboards are available in the `dashboards/` folder.
-
-
 ![Dashboard](dashboards/VISION_NEGOCIO_BI.png)
 ![Dashboard](dashboards/01_PERFIL_CLIENTE_BI.png)
 ![Dashboard](dashboards/02_PERFIL_CLIENTE_BI.png)
 
+Screenshots of the dashboards are also available in the `dashboards/` folder.
+
+---
+
+## 📁 Project Structure
+
+notebooks/
+
+* 01_data_cleaning_powerBI.ipynb → Data preparation and preprocessing
+* 02_propensity_model.ipynb → Propensity model
+* 03_customer_segmentation.ipynb → Customer segmentation
+* 04_business_case.ipynb → Business case and campaign simulation
+
+dashboards/
+
+* Power BI visualizations (screenshots)
 
 ---
 
@@ -125,17 +187,12 @@ Screenshots of the dashboards are available in the `dashboards/` folder.
 
 ---
 
-## 🛠️ Tools & Technologies
-
-* Python (Pandas, NumPy, Scikit-learn)
-* Jupyter Notebooks
-* Power BI
-
----
-
 ## 📝 Notes
 
 All notebooks and analysis are written in Spanish, as this project was developed during the second part of a Master’s program.
 
 The README is provided in English for broader accessibility.
+
+
+---
 
